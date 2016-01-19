@@ -1,1 +1,12 @@
-
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Plik wygenerowany przez WTW Extension Maker v1.2.7272.0-->
+<metanode>
+  <updateInfo arch="*" fileBase="https://raw.githubusercontent.com/artur-stepien/wtw-themes/master/chat/hangouts/" version="1.0.0.0">
+    <file lzFile="hangouts_chat.wtwExtension" />
+  </updateInfo>
+  <changelog name="hangouts_chat">
+    <group name="1.0">
+      <entry>- Utworzenie paczki</entry>
+    </group>
+  </changelog>
+</metanode>

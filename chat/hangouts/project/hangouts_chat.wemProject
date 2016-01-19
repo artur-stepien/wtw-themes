@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--WTW Extension Maker v1.2.7272.0-->
+<wemProject>
+  <name>HangoutsChatTheme</name>
+  <author>malkowitch</author>
+  <guid>{01e0e7b3-0cf0-4834-b98f-1d3775329907}</guid>
+  <ver>1.0.0.0</ver>
+  <desc>WTW theme for chat that looks like Google Hangouts Android App</desc>
+  <url>https://github.com/artur-stepien/wtw-themes/tree/master/chat/hangouts</url>
+  <update>https://raw.githubusercontent.com/artur-stepien/wtw-themes/master/chat/hangouts/update.xml</update>
+  <class>3</class>
+  <image />
+  <theme>
+    <directory name="htmlChat">
+      <file name="ChatTheme.html" loc="C:\Users\user0\AppData\Roaming\.wtw\profiles\malkowitch\userTheme\htmlChat\ChatTheme.html" arch="0" ni="False" />
+    </directory>
+  </theme>
+  <updatexml file="update.xml" fileBase="https://raw.githubusercontent.com/artur-stepien/wtw-themes/master/chat/hangouts/">
+    <changelog>
+      <group name="1.0">
+        <entry>- Utworzenie paczki</entry>
+      </group>
+    </changelog>
+  </updatexml>
+</wemProject>
