@@ -1,0 +1,159 @@
+﻿<!-- HEADER::BEGIN -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<base href="%path%"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Google Hangouts Chat Style</title>
+	<style type="text/css">
+		@import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext,greek,greek-ext,vietnamese,cyrillic-ext,cyrillic);
+		.body {
+			font-family:'Open Sans','Helvetica','Arial','Sans';color:#000;font-size:0.8em;
+			background:#E5E5E5;font-weight:300;
+		}
+		.message {
+			display:table;width:100%;margin-bottom:10px;
+		}
+		.message p {
+			margin:0;
+		}
+		.message time {
+			font-size: 0.7em;margin-top:5px;display:block;
+			color: #bbb;font-family:'Helvetica','Arial','Sans';font-weight:400;
+		}
+		.text {
+			display:table-cell;vertical-align:top;
+		}
+		.avatar {
+			display:table-cell;vertical-align:top;text-align:right;width:35px;
+		}
+		.avatar .container {
+			position:relative;
+		}
+		.avatar .container:after {
+			content: "";position: absolute;top: 0;right: 0;width: 0;height: 0;
+			border: 5px solid white;border-left-color: transparent;
+			border-bottom-color: transparent;box-shadow:none;
+		}
+		.recv .avatar .container:after {
+			content: "";position: absolute;bottom: 0;left: 0;top:auto;right:auto;
+			width: 0;height: 0;border: 5px solid white;border-right-color: transparent;
+			border-top-color: transparent;box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+		}
+		.avatar img {
+			background:gray;width:35px;display:block;border:1px solid #fff;
+		}
+		.text .container {
+			background:#fff;border-radius:2px;box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+			padding:10px 20px;display:inline-block;
+		}
+		.recv .avatar {
+			vertical-align:bottom;
+		}
+		.recv .text {
+			text-align:right;
+		}
+		.recv .text .container {
+			text-align:left;
+		}
+		.separator {
+			font-size:1px;line-height:1px;
+		}
+	</style>
+</head>
+<body class="body">
+<!-- HEADER::END -->
+
+<!-- CHAT-FULL-SEND::BEGIN -->
+<div class="self message">
+	<div class="avatar">
+		<div class="container">
+			<img src="%avatar%" />
+		</div>
+	</div>
+	<div class="text">
+		<div class="container">
+			<p>%text%</p>
+			<time datetime="%time%"><p>%time%</p></time>
+		</div>
+	</div>
+</div>
+<div class="separator">&nbsp;</div>
+<!-- CHAT-FULL-SEND::END -->
+
+<!-- CHAT-PART-SEND::BEGIN -->
+<div class="self message">
+	<div class="avatar">
+		<div class="container">
+			<img src="%avatar%" />
+		</div>
+	</div>
+	<div class="text">
+		<div class="container">
+			<p>%text%</p>
+			<time datetime="%time%"><p>%time%</p></time>
+		</div>
+	</div>
+</div>
+<div class="separator">&nbsp;</div>
+<!-- CHAT-PART-SEND::END -->
+
+<!-- CHAT-FULL-RECV::BEGIN -->
+<div class="recv message">
+	<div class="text">
+		<div class="container">
+			<p>%text%</p>
+			<time datetime="%time%"><p>%time%</p></time>
+		</div>
+	</div>
+	<div class="avatar">
+		<div class="container">
+			<img src="%avatar%" />
+		</div>
+	</div>
+</div>
+<div class="separator">&nbsp;</div>
+<!-- CHAT-FULL-RECV::END -->
+
+<!-- CHAT-PART-RECV::BEGIN -->
+<div class="recv message">
+	<div class="text">
+		<div class="container">
+			<p>%text%</p>
+			<time datetime="%time%"><p>%time%</p></time>
+		</div>
+	</div>
+	<div class="avatar">
+		<div class="container">
+			<img src="%avatar%" />
+		</div>
+	</div>
+</div>
+<div class="separator">&nbsp;</div>
+<!-- CHAT-PART-RECV::END -->
+
+<!-- WARNING::BEGIN -->
+<div class="warning">
+	<div class="timestatus">%datetime%</div>
+	<div class="status" style="color:#ff6600">%text%</div>
+</div>
+<!-- WARNING::END -->
+
+<!-- ERROR::BEGIN -->
+<div class="error">
+	<div class="timestatus">%datetime%</div>
+	<div class="status" style="color:#cc0033">%text%</div>
+</div>
+<!-- ERROR::END -->
+
+<!-- INFO::BEGIN -->
+<div class="info">
+	<div class="timestatus">%datetime%</div>
+	<div class="status">%text%</div>
+</div>
+<!-- INFO::END -->
+
+<!-- FOOTER::BEGIN -->
+</body>
+</html>
+<!-- FOOTER::END -->
